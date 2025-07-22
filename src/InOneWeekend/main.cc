@@ -59,6 +59,16 @@ int main() {
     world.add(make_shared<sphere>(point3(-0.3, 0.11, -0.25), 0.1, eye_material)); // olho esquerdo
     world.add(make_shared<sphere>(point3( 0.3, 0.11, -0.25), 0.1, eye_material)); // olho direito
 
+    // boca
+    auto mouth_material = make_shared<lambertian>(color(0.3, 0.0, 0.0));  // vermelho
+    int n_mouth = 8;
+    double y = 0.01;
+    for (int i = 0; i < n_mouth; ++i) { // add bolinhas em arco
+        double theta = pi / (n_mouth - 1) * i;  
+        double x = 0.4 * cos(theta);
+        double z = 0.3 + 0.4 * sin(theta);
+        world.add(make_shared<sphere>(point3(x, y, z), 0.1, mouth_material));
+    }
 
     camera cam;
 
