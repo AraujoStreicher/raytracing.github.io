@@ -53,16 +53,23 @@ int main() {
         world.add(make_shared<sphere>(point3(x, 0.01, z), 0.1, face_material));
     }
 
+    // os olhinhos
+    auto eye_material   = make_shared<lambertian>(color(0.05, 0.05, 0.05));   // pretinho
+
+    world.add(make_shared<sphere>(point3(-0.3, 0.11, -0.25), 0.1, eye_material)); // olho esquerdo
+    world.add(make_shared<sphere>(point3( 0.3, 0.11, -0.25), 0.1, eye_material)); // olho direito
+
+
     camera cam;
 
     cam.aspect_ratio      = 16.0 / 9.0;
-    cam.image_width       = 1200;
-    cam.samples_per_pixel = 10;
-    cam.max_depth         = 20;
+    cam.image_width       = 960;
+    cam.samples_per_pixel = 100;
+    cam.max_depth         = 50;
 
     //alterei a câmera pra olhar de cima e tirei o desfoque
     cam.vfov     = 30;
-    cam.lookfrom = point3(0, 5, 0);
+    cam.lookfrom = point3(0, 5, 1.5);
     cam.lookat   = point3(0, 0, 0);
     cam.vup      = vec3(0, 0, -1);
 
