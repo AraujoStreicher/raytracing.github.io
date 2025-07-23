@@ -18,7 +18,7 @@ Nossa cena desenvolvida com Raytracing in One Weekend como parte da avaliação 
   
 ## Construção e Execução
 
-O projeto usa **CMake**. Para construir:
+O projeto usa **CMake** para construir e é necessário GIMP para visualizar a imagem:
 
 ```bash
 # Configuração
