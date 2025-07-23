@@ -16,7 +16,8 @@ Nossa cena que foi realizada com Raytracing in One Weekend como parte da avalia�
   
 ## Construção e Execução
 
-O projeto usa **CMake** para construir e é necessário GIMP para visualizar a imagem:
+O projeto usa **CMake** para construir e é necessário GIMP para visualizar a imagem .ppm.
+A imagem final pode ser encontrada na pasta src/InOneWeekend tanto em ppm quanto em png. 
 
 ```bash
 # Configuração
