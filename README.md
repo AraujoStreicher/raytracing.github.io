@@ -1,6 +1,6 @@
 # Raytracing in One Weekend
 
-Nossa cena desenvolvida com Raytracing in One Weekend como parte da avaliação da disciplina de Processamento Gráfico. A cena representa um rosto feliz composto por esferas.
+Nossa cena que foi realizada com Raytracing in One Weekend como parte da avaliação da disciplina de Processamento Gráfico. A cena representa um rosto feliz composto por esferas.
 
 ## Grupo
 - Ana Clara Santana Matta – RA: 822396
