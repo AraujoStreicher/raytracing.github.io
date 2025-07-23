@@ -67,18 +67,18 @@ int main() {
         double theta = pi / (n_mouth - 1) * i;  
         double x = 0.4 * cos(theta);
         double z = 0.3 + 0.4 * sin(theta);
-        world.add(make_shared<sphere>(point3(x, y, z), 0.1, mouth_material));
+        world.add(make_shared<sphere>(point3(x, y, z), 0.07, mouth_material));
     }
 
     // sobrancelha
     auto eyebrow_material = make_shared<lambertian>(color(0.03, 0.03, 0.03));  // preto
-    world.add(make_shared<sphere>(point3(-0.4, 0.70, -0.25), 0.08, eyebrow_material)); // sobrancelha esquerda
-    world.add(make_shared<sphere>(point3(-0.255, 0.90, -0.25), 0.08, eyebrow_material)); // sobrancelha esquerda
-    world.add(make_shared<sphere>(point3(-0.15, 0.70, -0.25), 0.08, eyebrow_material)); // sobrancelha esquerda
+    world.add(make_shared<sphere>(point3(-0.4, 0.70, -0.25), 0.07, eyebrow_material)); // sobrancelha esquerda
+    world.add(make_shared<sphere>(point3(-0.255, 0.90, -0.25), 0.07, eyebrow_material)); // sobrancelha esquerda
+    world.add(make_shared<sphere>(point3(-0.15, 0.70, -0.25), 0.07, eyebrow_material)); // sobrancelha esquerda
    
-    world.add(make_shared<sphere>(point3(0.4, 0.70, -0.25), 0.08, eyebrow_material)); // sobrancelha direita
-    world.add(make_shared<sphere>(point3(0.255, 0.90, -0.25), 0.08, eyebrow_material)); // sobrancelha direita
-    world.add(make_shared<sphere>(point3(0.15, 0.70, -0.25), 0.08, eyebrow_material)); // sobrancelha direita
+    world.add(make_shared<sphere>(point3(0.4, 0.70, -0.25), 0.07, eyebrow_material)); // sobrancelha direita
+    world.add(make_shared<sphere>(point3(0.255, 0.90, -0.25), 0.07, eyebrow_material)); // sobrancelha direita
+    world.add(make_shared<sphere>(point3(0.15, 0.70, -0.25), 0.07, eyebrow_material)); // sobrancelha direita
     
 
     camera cam;
