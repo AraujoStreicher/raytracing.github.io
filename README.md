@@ -8,9 +8,7 @@ Nossa cena desenvolvida com Raytracing in One Weekend como parte da avaliação 
 - Felipe Jun Nishitani – RA: 822353
 - Gabriel Araujo Streicher – RA: 822485
 
-## Especificações do Projeto
-
-### Requisitos Cumpridos
+## Requisitos Cumpridos
 
 - Seguimos o tutorial *Raytracing in One Weekend*
 - A cena composta por diversos materias
